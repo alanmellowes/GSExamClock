@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="date" id="currentDate"></div>
+        <img src="/img/gsClockLog.png" alt="GS" class="logo">
+        <div class="center-info">
+            <div class="label"><b>Numero Centro:</b></div>
+            <div class="centerNo" contenteditable="true" style="color: red;"><b>IT071</b></div>
+        </div>
+    </div>
+
+    <div class="exam-info">
+        <div class="time" id="clock">
+            <span class="hours-minutes"></span>
+            <span class="seconds"></span>
+        </div>
+        <div class="exam-type"><b>Esame</b></div>
+        <div class="exam-paper" style="color: red;" contenteditable="true"><b>Carta</b></div>
+
+<div class="duration" id="durationLabel">Durata: <span class="duration-text" style="color: red;" contenteditable="true">1h 30 minutes</span></div>
+<div class="start-finish">
+    <div id="startLabel">Inizio: <span class="start-time" style="color: red;" contenteditable="true">08:00</span></div>
+    <div id="finishLabel">Fine: <span class="finish-time">09:30</span></div>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
